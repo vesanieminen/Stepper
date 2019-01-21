@@ -2,9 +2,9 @@ package org.vaadin.risto.stepper.demo;
 
 import org.vaadin.risto.stepper.IntStepper;
 
-import com.vaadin.data.Item;
+import com.vaadin.v7.data.Item;
 import com.vaadin.server.VaadinRequest;
-import com.vaadin.ui.Table;
+import com.vaadin.v7.ui.Table;
 import com.vaadin.ui.UI;
 
 public class StepperTableDemoUI extends UI {

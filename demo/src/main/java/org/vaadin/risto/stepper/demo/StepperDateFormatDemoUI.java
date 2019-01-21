@@ -1,15 +1,15 @@
 package org.vaadin.risto.stepper.demo;
 
 import com.google.common.base.Strings;
-import com.vaadin.data.Property;
-import com.vaadin.data.Property.ValueChangeEvent;
+import com.vaadin.v7.data.Property;
+import com.vaadin.v7.data.Property.ValueChangeEvent;
 import com.vaadin.server.VaadinRequest;
 import com.vaadin.ui.Alignment;
-import com.vaadin.ui.CheckBox;
+import com.vaadin.v7.ui.CheckBox;
 import com.vaadin.ui.CssLayout;
-import com.vaadin.ui.TextField;
+import com.vaadin.v7.ui.TextField;
 import com.vaadin.ui.UI;
-import com.vaadin.ui.VerticalLayout;
+import com.vaadin.v7.ui.VerticalLayout;
 import org.vaadin.risto.stepper.DateStepper;
 
 import java.text.DateFormat;

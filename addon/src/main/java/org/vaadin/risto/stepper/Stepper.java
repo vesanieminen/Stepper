@@ -1,7 +1,7 @@
 package org.vaadin.risto.stepper;
 
 import com.vaadin.server.Resource;
-import com.vaadin.ui.Field;
+import com.vaadin.v7.ui.Field;
 
 /**
  * Field that allows stepping through a discrete range values.

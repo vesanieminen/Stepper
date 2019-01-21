@@ -2,11 +2,11 @@ package org.vaadin.risto.stepper.demo;
 
 import org.vaadin.risto.stepper.IntStepper;
 
-import com.vaadin.data.Property.ValueChangeEvent;
-import com.vaadin.data.Property.ValueChangeListener;
+import com.vaadin.v7.data.Property.ValueChangeEvent;
+import com.vaadin.v7.data.Property.ValueChangeListener;
 import com.vaadin.server.VaadinRequest;
 import com.vaadin.ui.UI;
-import com.vaadin.ui.VerticalLayout;
+import com.vaadin.v7.ui.VerticalLayout;
 
 @SuppressWarnings("serial")
 public class StepperMinMaxLink extends UI {

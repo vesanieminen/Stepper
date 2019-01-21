@@ -4,7 +4,7 @@ import org.vaadin.risto.stepper.IntStepper;
 
 import com.vaadin.server.VaadinRequest;
 import com.vaadin.ui.UI;
-import com.vaadin.ui.VerticalLayout;
+import com.vaadin.v7.ui.VerticalLayout;
 
 public class StepperSizeUI extends UI {
 

@@ -2,8 +2,8 @@ package org.vaadin.risto.stepper.demo;
 
 import org.vaadin.risto.stepper.IntStepper;
 
-import com.vaadin.data.fieldgroup.FieldGroup;
-import com.vaadin.data.util.BeanItem;
+import com.vaadin.v7.data.fieldgroup.FieldGroup;
+import com.vaadin.v7.data.util.BeanItem;
 import com.vaadin.server.VaadinRequest;
 import com.vaadin.ui.UI;
 

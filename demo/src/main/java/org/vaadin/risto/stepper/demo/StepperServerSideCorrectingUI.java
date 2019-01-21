@@ -2,8 +2,8 @@ package org.vaadin.risto.stepper.demo;
 
 import org.vaadin.risto.stepper.IntStepper;
 
-import com.vaadin.data.Property;
-import com.vaadin.data.Property.ValueChangeEvent;
+import com.vaadin.v7.data.Property;
+import com.vaadin.v7.data.Property.ValueChangeEvent;
 import com.vaadin.server.VaadinRequest;
 import com.vaadin.ui.UI;
 

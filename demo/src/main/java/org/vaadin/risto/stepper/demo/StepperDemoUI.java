@@ -1,23 +1,23 @@
 package org.vaadin.risto.stepper.demo;
 
 import com.vaadin.annotations.Theme;
-import com.vaadin.data.Property;
-import com.vaadin.data.Property.ValueChangeEvent;
-import com.vaadin.data.Property.ValueChangeListener;
+import com.vaadin.v7.data.Property;
+import com.vaadin.v7.data.Property.ValueChangeEvent;
+import com.vaadin.v7.data.Property.ValueChangeListener;
 import com.vaadin.server.Page;
 import com.vaadin.server.VaadinRequest;
-import com.vaadin.shared.ui.label.ContentMode;
-import com.vaadin.ui.AbstractComponent;
+import com.vaadin.v7.shared.ui.label.ContentMode;
 import com.vaadin.ui.Alignment;
 import com.vaadin.ui.Button;
-import com.vaadin.ui.CheckBox;
+import com.vaadin.v7.ui.AbstractLegacyComponent;
+import com.vaadin.v7.ui.CheckBox;
 import com.vaadin.ui.GridLayout;
-import com.vaadin.ui.Label;
+import com.vaadin.v7.ui.Label;
 import com.vaadin.ui.Layout;
 import com.vaadin.ui.Notification;
 import com.vaadin.ui.Panel;
 import com.vaadin.ui.UI;
-import com.vaadin.ui.VerticalLayout;
+import com.vaadin.v7.ui.VerticalLayout;
 import org.vaadin.risto.stepper.BigDecimalStepper;
 import org.vaadin.risto.stepper.DateStepper;
 import org.vaadin.risto.stepper.FloatStepper;
@@ -429,7 +429,7 @@ public class StepperDemoUI extends UI {
         valueLabel.setContentMode(ContentMode.HTML);
 
         //it's weird that setImmediate is not in the interface level
-        ((AbstractComponent) stepper).setImmediate(true);
+        ((AbstractLegacyComponent) stepper).setImmediate(true);
 
         stepper.addValueChangeListener(new Property.ValueChangeListener() {
 

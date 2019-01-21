@@ -1,6 +1,6 @@
 package org.vaadin.risto.stepper.client.shared;
 
-import com.vaadin.shared.AbstractFieldState;
+import com.vaadin.v7.shared.AbstractFieldState;
 
 public class AbstractStepperState extends AbstractFieldState {
 

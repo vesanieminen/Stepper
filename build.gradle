@@ -19,13 +19,19 @@ subprojects {
     }
 
     vaadin {
-        version = "7.7.7"
+        version = "8.6.1"
         logToConsole = true
     }
 
     vaadinCompile {
         draftCompile = true
         strict = true
+    }
+
+    dependencies {
+        compile("com.vaadin:vaadin-compatibility-server:8.6.1")
+        compile("com.vaadin:vaadin-compatibility-client:8.6.1")
+        compile("com.vaadin:vaadin-compatibility-shared:8.6.1")
     }
 
     sourceCompatibility = "1.8"
@@ -39,7 +45,7 @@ subprojects {
 
 //addon project, only creates the Directory-compatible JAR
 project(":addon") {
-    version = "2.3.0"
+    version = "2.3.0-v7-compatibility"
 
     vaadin {
         addon {

@@ -9,7 +9,7 @@ import org.vaadin.risto.stepper.client.shared.StepperRpc;
 import com.vaadin.server.FontAwesome;
 import com.vaadin.server.Resource;
 import com.vaadin.shared.MouseEventDetails;
-import com.vaadin.ui.AbstractField;
+import com.vaadin.v7.ui.AbstractField;
 import com.vaadin.ui.Component;
 import com.vaadin.ui.declarative.DesignAttributeHandler;
 import com.vaadin.ui.declarative.DesignContext;
