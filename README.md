@@ -7,6 +7,8 @@ Implementations for integer, float and date values are provided.
 ## Getting started
 
 Build project: `./gradlew build` 
+
+For local Maven publishing use the following command: `./gradlew addon:publishToMavenLocal` 
  
 Run demo application: `./gradlew demo:vaadinRun`
 
