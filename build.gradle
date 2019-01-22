@@ -3,6 +3,10 @@ plugins {
     id "org.sonarqube" version "2.2"
 }
 
+repositories {
+    mavenLocal()
+}
+
 //common for both projects
 subprojects {
     ext.baseNameUpper = project.parent.name.capitalize()
@@ -39,6 +43,7 @@ subprojects {
 
     group = "org.vaadin.risto.${baseNameLower}"
 
+
     //creates archives named "name-version.jar" and "name.war" where name is the name of the main project
     archivesBaseName = baseNameLower
 }
@@ -46,6 +51,8 @@ subprojects {
 //addon project, only creates the Directory-compatible JAR
 project(":addon") {
     version = "2.3.0-v7-compatibility"
+
+    apply plugin: "maven-publish"
 
     vaadin {
         addon {
@@ -70,6 +77,17 @@ project(":addon") {
     }
 
     war.enabled = false
+
+    publishing {
+        publications {
+            maven(MavenPublication) {
+                groupId = "org.vaadin.addons"
+                artifactId = "stepper"
+                version = "${version}"
+                from components.java
+            }
+        }
+    }
 }
 
 //demo project, builds addon and packages demo UI as WAR
